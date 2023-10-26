@@ -1,0 +1,14 @@
+{
+  "name": "esc-project",
+  "version": "1.0.0",
+  "description": "Build and design a web page for a fictitious client.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jesper R",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.69.5"
+  }
+}
