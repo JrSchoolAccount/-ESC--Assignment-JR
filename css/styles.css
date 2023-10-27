@@ -52,20 +52,21 @@
   margin: 37px;
 }
 .challenge-buttons a.on-site-button {
+  background-color: #8ACFE5;
+  border-radius: 5px;
+  border: none;
+  box-shadow: -1px 2px 3px 0px #B6BDB5;
+  cursor: pointer;
   font-weight: 700;
   padding: 20px 70px;
-  border: none;
-  border-radius: 5px;
-  background-color: #8ACFE5;
-  cursor: pointer;
 }
 .challenge-buttons a.online-button {
-  color: #36769D;
-  font-weight: 700;
   border: none;
-  font-size: 16px;
-  text-decoration: underline;
+  color: #36769D;
   cursor: pointer;
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: underline;
 }
 
 .container-reviews {
@@ -94,6 +95,7 @@
 }
 
 .rooms {
+  box-shadow: -1px 2px 3px 0px #B6BDB5;
   border-radius: 8px;
   border: none;
   margin: 1em;
@@ -125,13 +127,42 @@
 }
 .rooms button {
   background-color: #E3170A;
-  border: none;
   border-radius: 4px;
+  border: none;
+  box-shadow: -1px 2px 3px 0px #B6BDB5;
   color: #fff;
   font-size: 16px;
   font-weight: 400;
-  text-align: center;
   height: 44px;
   margin: 0.5rem 0 0.5rem 10em;
+  text-align: center;
   width: 170px;
+}
+
+.container-full-story {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #011827;
+  min-width: 480px;
+  height: 500px;
+}
+.container-full-story p {
+  text-align: center;
+  color: #fff;
+  font-size: 28px;
+  font-weight: 400;
+  margin: 1rem 0;
+}
+.container-full-story button {
+  text-align: center;
+  background-color: #011827;
+  border-radius: 5px;
+  border: solid 2px #8ACFE5;
+  color: #8ACFE5;
+  cursor: pointer;
+  font-weight: 700;
+  padding: 20px 70px;
+  margin-top: 1rem;
 }
