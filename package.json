@@ -4,7 +4,7 @@
   "description": "Build and design a web page for a fictitious client.",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "sass:watch": "sass --no-source-map --watch src/styles.scss css/styles.css"
   },
   "author": "Jesper R",
   "license": "ISC",
