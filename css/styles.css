@@ -36,18 +36,11 @@
   min-height: 274px;
 }
 
-.button {
+.a {
   color: #011827;
   font-weight: bold;
-  height: 66px;
-  width: 308px;
-}
-.button.link {
-  background-color: none;
-  border: none;
-  padding: 0;
-  text-decoration: underline;
-  cursor: pointer;
+  min-height: 66px;
+  min-width: 308px;
 }
 
 .challenge-buttons {
@@ -56,9 +49,40 @@
   color: #011827;
   align-items: center;
   gap: 1em;
-  font-weight: bold;
+  margin: 37px;
+}
+.challenge-buttons a.on-site-button {
+  font-weight: 700;
+  padding: 20px 70px;
+  border: none;
+  border-radius: 5px;
+  background-color: #8ACFE5;
+  cursor: pointer;
+}
+.challenge-buttons a.online-button {
+  color: #36769D;
+  font-weight: 700;
+  border: none;
+  font-size: 16px;
+  text-decoration: underline;
+  cursor: pointer;
 }
 
-.user-quotes {
-  display: flex;
+.container-reviews {
+  display: grid;
+  grid-template-columns: 25% 2fr;
+  column-gap: 5px;
+  margin: 3em 0.2rem;
+  font-style: italic;
+}
+.container-reviews p {
+  font-size: 22px;
+}
+.container-reviews small {
+  font-size: 16px;
+  justify-content: flex-end;
+}
+.container-reviewsimg {
+  width: 50%;
+  height: 50%;
 }

@@ -41,19 +41,12 @@
   }
 }
 
-.button {
+.a {
   color: $esc-dark;
   font-weight: bold;
-  height: 66px;
-  width: 308px;
+  min-height: 66px;
+  min-width: 308px;
 
-  &.link {
-  background-color: none;
-  border: none;
-  padding: 0;
-  text-decoration: underline;
-  cursor: pointer;
-  }
 }
 
 .challenge-buttons {
@@ -62,12 +55,46 @@
   color: $esc-dark;
   align-items: center;
   gap: 1em;
-  font-weight: bold;
+  margin: 37px;
 
-  &.on-site-button {
+  a.on-site-button {
+    font-weight: 700;
+    padding: 20px 70px;
+    border: none;
+    border-radius: 5px;
+    background-color: $esc-light-blue;
+    cursor: pointer;
   }
 
-  &.online-button {
-   
+  a.online-button {
+    color: $esc-blue;
+    font-weight: 700;
+    border: none;
+    font-size: 16px;
+    text-decoration: underline;
+    cursor: pointer;
   }
+}
+
+.container-reviews {
+  display: grid;
+  grid-template-columns: 25% 2fr;
+  column-gap: 5px;
+  margin: 3em 0.2rem;
+  font-style: italic;
+
+  p {
+    font-size: 22px;
+  }
+
+  small {
+    font-size: 16px;
+    justify-content: flex-end;
+  }
+
+  &img {
+    width: 50%;
+    height: 50%;
+  }
+
 }
