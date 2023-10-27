@@ -72,7 +72,7 @@
   display: grid;
   grid-template-columns: 25% 2fr;
   column-gap: 5px;
-  margin: 3em 0.2rem;
+  margin: 3em 1.3rem;
   font-style: italic;
 }
 .container-reviews p {
@@ -80,7 +80,6 @@
 }
 .container-reviews small {
   font-size: 16px;
-  justify-content: flex-end;
 }
 .container-reviewsimg {
   width: 50%;
