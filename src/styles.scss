@@ -1,0 +1,73 @@
+@import 'colors';
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  font-family: Roboto;
+  font-size: 24px;
+  margin: 0;
+}
+
+.header {
+  background-color: $esc-dark;
+  display: flex;
+  min-height: 144px;
+  
+
+  img {
+    margin: 26px 15px;
+    width: 128px;
+    height: 82px;
+  }
+  h1 {
+  margin: 1em 0;
+  color: #fff;
+  max-width: 20%;
+  min-width: 30%;  
+  gap: 1em;
+  }
+}
+
+.banner {
+  height: 50;
+
+  img {
+  max-width: 100%;
+  min-height: 274px;
+  }
+}
+
+.button {
+  color: $esc-dark;
+  font-weight: bold;
+  height: 66px;
+  width: 308px;
+
+  &.link {
+  background-color: none;
+  border: none;
+  padding: 0;
+  text-decoration: underline;
+  cursor: pointer;
+  }
+}
+
+.challenge-buttons {
+  display: flex;
+  flex-direction: column;
+  color: $esc-dark;
+  align-items: center;
+  gap: 1em;
+  font-weight: bold;
+
+  &.on-site-button {
+  }
+
+  &.online-button {
+   
+  }
+}
