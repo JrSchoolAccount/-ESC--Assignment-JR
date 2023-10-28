@@ -175,7 +175,13 @@
 .container-end {
   display: grid;
   grid-template-columns: 1fr;
+  grid-row-gap: 100px;
 }
 .container-end.container-end-images {
-  width: 480px;
+  max-width: 480px;
+  max-height: 300px;
+}
+.container-end.container-end-images img {
+  max-width: 100%;
+  max-height: 100%;
 }
