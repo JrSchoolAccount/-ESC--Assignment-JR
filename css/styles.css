@@ -171,3 +171,11 @@
   padding: 20px 70px;
   margin-top: 1rem;
 }
+
+.container-end {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.container-end.container-end-images {
+  width: 480px;
+}

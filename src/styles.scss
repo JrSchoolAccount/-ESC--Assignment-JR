@@ -173,3 +173,13 @@
     margin-top: 1rem;
   }
 }
+
+.container-end {
+  display: grid;
+  grid-template-columns: 1fr;
+
+  &.container-end-images {
+    width: 480px;
+  }
+
+}
