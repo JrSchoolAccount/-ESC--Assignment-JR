@@ -95,46 +95,52 @@
   font-weight: 400;
 }
 
-.rooms {
-  // display: flex;
-  // flex-direction: column;
-  // align-content: center;
-  box-shadow: -1px 2px 3px 0px $esc-gray;
-  border-radius: 8px;
-  border: none;
-  margin: 1em;
-  width: 350px;
+.container-challenges {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-  img.hacker {
-    border-radius: 8px 8px 0 0;
-    width: 100%;
-    height: 100%;
-  }
+  .rooms {
+    // display: flex;
+    // flex-direction: column;
+    // align-content: center;
+    box-shadow: -1px 2px 3px 0px $esc-gray;
+    border-radius: 8px;
+    border: none;
+    margin: 1em;
+    width: 350px;
 
-  h2 {
-    margin: 0 0.5rem;
-    font-size: 28px;
-    font-weight: 400;
-  }
-  span {
-    margin: 0 0.5rem;
-  }
+    img.hacker {
+      border-radius: 8px 8px 0 0;
+      width: 100%;
+      height: 100%;
+    }
 
-  p {
-    margin: 0 0.5rem;
-    margin-top: 0.1rem;
-    font-size: 18px;
-    font-weight: 400;
-  }
+    h2 {
+      margin: 0 0.5rem;
+      font-size: 28px;
+      font-weight: 400;
+    }
+    span {
+      margin: 0 0.5rem;
+    }
 
-  small {
-    margin: 0 0.5rem;
-    font-size: 14px;
-    font-weight: 400;
-  }
+    p {
+      margin: 0 0.5rem;
+      margin-top: 0.1rem;
+      font-size: 18px;
+      font-weight: 400;
+    }
 
-  button {
-    @include book-button;
+    small {
+      margin: 0 0.5rem;
+      font-size: 14px;
+      font-weight: 400;
+    }
+
+    button {
+      @include book-button;
+    }
   }
 }
 
