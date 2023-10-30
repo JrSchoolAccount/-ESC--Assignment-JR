@@ -17,6 +17,7 @@
   background-color: $esc-dark;
   display: flex;
   min-height: 144px;
+  max-height: 215px;
   
 
   img {
@@ -25,20 +26,43 @@
     height: 82px;
   }
   h1 {
-  margin: 1em 0;
+  margin: 2em 0;
   color: #fff;
   max-width: 20%;
   min-width: 30%;  
   gap: 1em;
+
+  @media screen and (min-width: 700px) {
+    font-size: 40px;
+    max-width: 100%;
+    margin: 1.5em 0;
+  }
   }
 }
 
-.banner {
-  height: 50;
+nav {
+    background-color: $esc-dark;
+    color: #fff;
+  ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: center;
+
+    li {
+      font-size: 24px;
+      font-weight: 700;
+      margin: 1rem;
+    }
+  }
+}
+
+.hero-banner {
+  height: 50%;
 
   img {
-  max-width: 100%;
-  min-height: 274px;
+  width: 100%;
+  height: 100%;
   }
 }
 
@@ -150,7 +174,7 @@
   align-items: center;
   justify-content: center;
   background-color: $esc-dark;
-  min-width: 480px;
+  min-width: 100%;
   height: 500px;
 
   p {
@@ -229,7 +253,24 @@
       font-weight: 400;
     }
 
-    nav {
-      
+    div.footer-container {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 0.2rem;
+
+      h3 {
+        padding-top: 1rem;
+      }
+
+      a {
+        color: #fff;
+        font-size: 18px;
+        font-weight: 400;
+        text-decoration: none;
+      }
+      div.footer-links-1, div.footer-links-2 {
+        display: grid;
+        grid-template-columns: 1fr;
+      }
     }
   }
