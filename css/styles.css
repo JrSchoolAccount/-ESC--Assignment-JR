@@ -87,9 +87,9 @@
   height: 50%;
 }
 
-.challenges-header {
-  text-align: center;
+.heading {
   padding: 2em 0 1rem 0;
+  text-align: center;
   font-size: 32px;
   font-weight: 400;
 }
@@ -111,7 +111,7 @@
   width: 100%;
   height: 100%;
 }
-.container-challenges .rooms h2 {
+.container-challenges .rooms h3 {
   margin: 0 0.5rem;
   font-size: 28px;
   font-weight: 400;
@@ -175,11 +175,55 @@
 .container-end {
   display: grid;
   grid-template-columns: 1fr;
-  max-width: 480px;
 }
-.container-end.container-end-images {
-  padding: 300px 480px;
+.container-end img {
+  max-width: 100vw;
+  max-height: 100vw;
 }
-.container-end.container-end-images img {
-  object-fit: contain;
+.container-end div {
+  padding: 30px 0 80px 0;
+}
+.container-end h2 {
+  margin: 0 20px;
+  padding: 0 0 0.5rem 0;
+  text-align: left;
+  font-size: 32px;
+  font-weight: 700;
+}
+.container-end p {
+  padding-bottom: 50px;
+  margin: 30px 20px;
+  text-align: left;
+}
+.container-end a {
+  margin: 30px 20px;
+  background-color: #E3170A;
+  border-radius: 5px;
+  border: none;
+  box-shadow: -1px 2px 3px 0px #B6BDB5;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 700;
+  padding: 20px 70px;
+  text-decoration: none;
+}
+
+.white-space {
+  padding: 20px 0;
+}
+
+footer {
+  background-color: #011827;
+  color: #fff;
+  padding: 64px 20px;
+  gap: 1rem;
+}
+footer h3 {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0.2rem 0;
+}
+footer p {
+  font-size: 18px;
+  font-weight: 400;
 }

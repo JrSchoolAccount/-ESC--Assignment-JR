@@ -12,7 +12,7 @@
     width: 170px;
 }
 
-@mixin on-site-blue-button {
+@mixin blue-button {
     background-color: $esc-light-blue;
     border-radius: 5px;
     border: none;
@@ -20,6 +20,18 @@
     cursor: pointer;
     font-weight: 700;
     padding: 20px 70px;
+}
+
+@mixin red-button {
+    background-color: $esc-red;
+    border-radius: 5px;
+    border: none;
+    box-shadow: -1px 2px 3px 0px $esc-gray;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 700;
+    padding: 20px 70px;
+    text-decoration: none;
 }
 
 @mixin online-blue-link {
