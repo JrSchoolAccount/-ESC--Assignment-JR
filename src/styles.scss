@@ -53,6 +53,11 @@ nav {
       font-size: 24px;
       font-weight: 700;
       margin: 1rem;
+
+      &:hover {
+        color: $esc-light-blue;
+        cursor: pointer;
+      }
     }
   }
 }

@@ -51,6 +51,10 @@ nav ul li {
   font-weight: 700;
   margin: 1rem;
 }
+nav ul li:hover {
+  color: #8ACFE5;
+  cursor: pointer;
+}
 
 .hero-banner {
   height: 50%;
