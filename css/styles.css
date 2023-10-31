@@ -22,7 +22,7 @@
   height: 82px;
 }
 .header h1 {
-  margin: 2em 0;
+  margin: 1em 0;
   color: #fff;
   max-width: 20%;
   min-width: 30%;
@@ -37,23 +37,29 @@
 }
 
 nav {
-  background-color: #011827;
-  color: #fff;
+  display: none;
 }
-nav ul {
-  display: flex;
-  flex-direction: row;
-  list-style: none;
-  justify-content: center;
-}
-nav ul li {
-  font-size: 24px;
-  font-weight: 700;
-  margin: 1rem;
-}
-nav ul li:hover {
-  color: #8ACFE5;
-  cursor: pointer;
+@media screen and (min-width: 700px) {
+  nav {
+    display: block;
+    background-color: #011827;
+    color: #fff;
+  }
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: center;
+  }
+  nav ul li {
+    font-size: 24px;
+    font-weight: 700;
+    margin: 1rem;
+  }
+  nav ul li:hover {
+    color: #8ACFE5;
+    cursor: pointer;
+  }
 }
 
 .hero-banner {
@@ -64,13 +70,6 @@ nav ul li:hover {
   height: 100%;
 }
 
-.a {
-  color: #011827;
-  font-weight: bold;
-  min-height: 66px;
-  min-width: 308px;
-}
-
 .challenge-buttons {
   display: flex;
   flex-direction: column;
@@ -79,16 +78,23 @@ nav ul li:hover {
   gap: 1em;
   margin: 37px;
 }
-.challenge-buttons a.on-site-button {
+@media screen and (min-width: 700px) {
+  .challenge-buttons.top {
+    flex-direction: row-reverse;
+    justify-content: center;
+    margin: -40px 0 37px;
+  }
+}
+.challenge-buttons.top a.on-site-button {
   background-color: #8ACFE5;
   border-radius: 5px;
   border: none;
-  box-shadow: -1px 2px 3px 0px #B6BDB5;
+  box-shadow: 1px 1px 1px 0px #B6BDB5;
   cursor: pointer;
   font-weight: 700;
   padding: 20px 70px;
 }
-.challenge-buttons a.online-button {
+.challenge-buttons.top a.online-button {
   border: none;
   color: #36769D;
   cursor: pointer;
@@ -96,23 +102,89 @@ nav ul li:hover {
   font-weight: 700;
   text-decoration: underline;
 }
+@media screen and (min-width: 700px) {
+  .challenge-buttons.top a.online-button {
+    background-color: #E3170A;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 1px 1px 1px 0px #B6BDB5;
+    color: #fff;
+    cursor: pointer;
+    font-size: 24px;
+    font-weight: 700;
+    padding: 20px 70px;
+    text-decoration: none;
+  }
+}
+@media screen and (min-width: 700px) {
+  .challenge-buttons.bottom {
+    flex-direction: row-reverse;
+    justify-content: center;
+  }
+}
+.challenge-buttons.bottom a.on-site-button {
+  background-color: #8ACFE5;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 1px 1px 1px 0px #B6BDB5;
+  cursor: pointer;
+  font-weight: 700;
+  padding: 20px 70px;
+}
+.challenge-buttons.bottom a.online-button {
+  border: none;
+  color: #36769D;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: underline;
+}
+@media screen and (min-width: 700px) {
+  .challenge-buttons.bottom a.online-button {
+    background-color: #E3170A;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 1px 1px 1px 0px #B6BDB5;
+    color: #fff;
+    cursor: pointer;
+    font-size: 24px;
+    font-weight: 700;
+    padding: 20px 70px;
+    text-decoration: none;
+  }
+}
 
 .container-reviews {
-  display: grid;
-  grid-template-columns: 25% 2fr;
-  column-gap: 5px;
-  margin: 3em 1.3rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.container-reviews .review {
+  display: flex;
+  flex-direction: row;
+  margin: 20px;
   font-style: italic;
 }
-.container-reviews p {
-  font-size: 22px;
+.container-reviews .review.hidden {
+  display: none;
 }
-.container-reviews small {
+@media screen and (min-width: 700px) {
+  .container-reviews .review.hidden {
+    display: flex;
+  }
+}
+.container-reviews .review p {
+  font-size: 22px;
+  max-height: 139px;
+  max-width: 368px;
+}
+.container-reviews .review small {
   font-size: 16px;
 }
-.container-reviewsimg {
-  width: 50%;
-  height: 50%;
+.container-reviews .review img {
+  width: auto;
+  height: 72px;
+  margin-right: 4px;
 }
 
 .heading {
@@ -162,7 +234,7 @@ nav ul li:hover {
   background-color: #E3170A;
   border-radius: 4px;
   border: none;
-  box-shadow: -1px 2px 3px 0px #B6BDB5;
+  box-shadow: 1px 1px 1px 0px #B6BDB5;
   color: #fff;
   font-size: 16px;
   font-weight: 400;
@@ -228,7 +300,7 @@ nav ul li:hover {
   background-color: #E3170A;
   border-radius: 5px;
   border: none;
-  box-shadow: -1px 2px 3px 0px #B6BDB5;
+  box-shadow: 1px 1px 1px 0px #B6BDB5;
   color: #fff;
   cursor: pointer;
   font-weight: 700;

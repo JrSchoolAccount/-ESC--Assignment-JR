@@ -2,7 +2,7 @@
     background-color: $esc-red;
     border-radius: 4px;
     border: none;
-    box-shadow: -1px 2px 3px 0px $esc-gray;
+    box-shadow: 1px 1px 1px 0px $esc-gray;
     color: #fff;
     font-size: 16px;
     font-weight: 400;
@@ -16,17 +16,30 @@
     background-color: $esc-light-blue;
     border-radius: 5px;
     border: none;
-    box-shadow: -1px 2px 3px 0px $esc-gray;
+    box-shadow: 1px 1px 1px 0px $esc-gray;
     cursor: pointer;
     font-weight: 700;
     padding: 20px 70px;
+}
+
+@mixin big-red-button {
+    background-color: $esc-red;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 1px 1px 1px 0px $esc-gray;
+    color: #fff;
+    cursor: pointer;
+    font-size: 24px;
+    font-weight: 700;
+    padding: 20px 70px;
+    text-decoration: none;
 }
 
 @mixin red-button {
     background-color: $esc-red;
     border-radius: 5px;
     border: none;
-    box-shadow: -1px 2px 3px 0px $esc-gray;
+    box-shadow: 1px 1px 1px 0px $esc-gray;
     color: #fff;
     cursor: pointer;
     font-weight: 700;
@@ -41,4 +54,10 @@
     font-size: 16px;
     font-weight: 700;
     text-decoration: underline;
+}
+
+@mixin breakpoint($min-size) {
+    @media screen and (min-width: $min-size) {
+    @content;
+    }
 }
