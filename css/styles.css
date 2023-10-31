@@ -89,7 +89,7 @@ nav {
   background-color: #8ACFE5;
   border-radius: 5px;
   border: none;
-  box-shadow: 1px 1px 1px 0px #B6BDB5;
+  box-shadow: 0px 1px 1px 0px #B6BDB5;
   cursor: pointer;
   font-weight: 700;
   padding: 20px 70px;
@@ -107,7 +107,7 @@ nav {
     background-color: #E3170A;
     border-radius: 5px;
     border: none;
-    box-shadow: 1px 1px 1px 0px #B6BDB5;
+    box-shadow: 0px 1px 1px 0px #B6BDB5;
     color: #fff;
     cursor: pointer;
     font-size: 24px;
@@ -126,7 +126,7 @@ nav {
   background-color: #8ACFE5;
   border-radius: 5px;
   border: none;
-  box-shadow: 1px 1px 1px 0px #B6BDB5;
+  box-shadow: 0px 1px 1px 0px #B6BDB5;
   cursor: pointer;
   font-weight: 700;
   padding: 20px 70px;
@@ -144,7 +144,7 @@ nav {
     background-color: #E3170A;
     border-radius: 5px;
     border: none;
-    box-shadow: 1px 1px 1px 0px #B6BDB5;
+    box-shadow: 0px 1px 1px 0px #B6BDB5;
     color: #fff;
     cursor: pointer;
     font-size: 24px;
@@ -234,7 +234,7 @@ nav {
   background-color: #E3170A;
   border-radius: 4px;
   border: none;
-  box-shadow: 1px 1px 1px 0px #B6BDB5;
+  box-shadow: 0px 1px 1px 0px #B6BDB5;
   color: #fff;
   font-size: 16px;
   font-weight: 400;
@@ -300,7 +300,7 @@ nav {
   background-color: #E3170A;
   border-radius: 5px;
   border: none;
-  box-shadow: 1px 1px 1px 0px #B6BDB5;
+  box-shadow: 0px 1px 1px 0px #B6BDB5;
   color: #fff;
   cursor: pointer;
   font-weight: 700;
