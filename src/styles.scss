@@ -250,52 +250,72 @@ nav {
 
 .container-end {
     display: grid;
-    grid-template-columns: 100vw;
-    max-width: 100vw;
+    grid-template-columns: 1fr;
+    width: 100vw;
 
     @include breakpoint($medium-screen-breakpoint) {
       grid-template-columns: 1fr 1fr;
-      max-width: 100vw;
     }
 
-    div.container-image-1 {
-      background-image: url(../images/nesa-by-makers-IgUR1iX0mqM-unsplash\ 1.png);
-      background-size: contain;
+    img {
+      max-width: 100%;
       height: auto;
+      vertical-align: middle;
+      display: inline-block;
     }
 
     div.container-image-2 {
-      background-image: url(../images/kelly-sikkema-YK0HPwWDJ1I-unsplash\ 1.png);
-      background-size: contain;
+      @include breakpoint($medium-screen-breakpoint) {
+        order: 4;
+      }
     }
 
     div.container-text {
-      padding: 30px 0 80px 0;
+      display: flex;
+      align-items: flex-start;
+      flex-direction: column;
+      justify-content: center;
+      width: 100%;
+      padding: 30px 20px;
       }
 
     h2 {
-      margin: 0 20px;
-      padding: 0 0 0.5rem 0;
       text-align: left;
       font-size: 32px;
       font-weight: 700;
+
+      @include breakpoint($large-screen-breakpoint) {
+        margin: 20px 80px 0 80px;
+      }
     }
 
     p {
-      padding-bottom: 50px;
-      margin: 30px 20px;
+      margin: 30px 0;
       text-align: left;
+      
+      @include breakpoint($large-screen-breakpoint) {
+        margin: 20px 80px 0 80px;
+      }
     }
 
     a {
       margin: 30px 20px;
+
+      @include breakpoint($large-screen-breakpoint) {
+        margin-left: 80px;
+      }
 
       @include red-button;
       }
   }
 
   .white-space {
-    padding: 20px 0;
+    padding: 1em 0;
+
+    @include breakpoint($medium-screen-breakpoint) {
+      padding: 3em 0;
+    }
+
   }
 
   footer {
