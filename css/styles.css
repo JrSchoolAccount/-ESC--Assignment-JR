@@ -195,9 +195,19 @@ nav {
 }
 
 .container-challenges {
+  align-items: flex-start;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: row;
+  height: 456px;
+  justify-content: flex-start;
+  overflow-x: scroll;
+  width: 100%;
+}
+@media screen and (min-width: 1020px) {
+  .container-challenges {
+    overflow-x: unset;
+    justify-content: center;
+  }
 }
 .container-challenges .rooms {
   box-shadow: -1px 2px 3px 0px #B6BDB5;
@@ -239,7 +249,7 @@ nav {
   font-size: 16px;
   font-weight: 400;
   height: 44px;
-  margin: 0.5rem 0 0.5rem 10em;
+  margin: 0.5rem 10em 0.5rem 10em;
   text-align: center;
   width: 170px;
 }

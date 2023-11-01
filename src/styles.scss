@@ -168,14 +168,20 @@ nav {
 }
 
 .container-challenges {
+  align-items: flex-start;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: row;
+  height: 456px;
+  justify-content: flex-start;
+  overflow-x: scroll;
+  width: 100%;
+
+  @include breakpoint($large-screen-breakpoint) {
+    overflow-x: unset;
+    justify-content: center;
+  }
 
   .rooms {
-    // display: flex;
-    // flex-direction: column;
-    // align-content: center;
     box-shadow: -1px 2px 3px 0px $esc-gray;
     border-radius: 8px;
     border: none;
