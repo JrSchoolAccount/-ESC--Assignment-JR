@@ -324,6 +324,13 @@ nav {
     padding: 64px 20px;
     gap: 1rem;
 
+    @include breakpoint($medium-screen-breakpoint) {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 146px 200px 174px 108px;
+    }
+
     h3 {
       font-size: 18px;
       font-weight: 700;
@@ -333,26 +340,27 @@ nav {
     p {
       font-size: 18px;
       font-weight: 400;
+
+      @include breakpoint($medium-screen-breakpoint) {
+        width: 416px;
+        height: 119px;
+      }
     }
 
-    div.footer-container {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 0.2rem;
-
-      h3 {
-        padding-top: 1rem;
-      }
-
-      a {
-        color: #fff;
-        font-size: 18px;
-        font-weight: 400;
-        text-decoration: none;
-      }
       div.footer-links-1, div.footer-links-2 {
-        display: grid;
-        grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column;
+        gap: 0.2rem;
+
+        h3 {
+          padding-top: 1rem 0;
+        }
+
+        a {
+          color: #fff;
+          font-size: 18px;
+          font-weight: 400;
+          text-decoration: none;
+        }
       }
-    }
   }
