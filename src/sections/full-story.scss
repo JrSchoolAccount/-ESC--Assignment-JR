@@ -1,0 +1,30 @@
+.container-full-story {
+    align-items: center;
+    background-color: $esc-dark;
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    justify-content: center;
+    min-width: 100%;
+
+    p {
+    color: #fff;
+    font-size: 28px;
+    font-weight: 400;
+    margin: 1rem 0;
+    max-width: 600px;
+    text-align: center;
+    }
+
+button {
+    background-color: $esc-dark;
+    border-radius: 5px;
+    border: solid 2px $esc-light-blue;
+    color: $esc-light-blue;
+    cursor: pointer;
+    font-weight: 700;
+    margin-top: 1rem;
+    padding: 20px 70px;
+    text-align: center;
+    }
+}

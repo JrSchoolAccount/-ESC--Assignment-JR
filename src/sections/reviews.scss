@@ -1,0 +1,36 @@
+.container-reviews {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+.review {
+    display: flex;
+    flex-direction: row;
+    font-style: italic;
+    margin: 20px;
+
+    &.hidden {
+        display: none;
+
+    @include breakpoint($medium-screen-breakpoint) {
+        display: flex;
+    }
+    }
+
+p {
+    font-size: 22px;
+    max-height: 139px;
+    max-width: 368px;
+}
+
+small {
+    font-size: 16px;
+}
+
+img {
+    height: 72px;
+    margin-right: 4px;
+    width: auto;
+}
+}
+}

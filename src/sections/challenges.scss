@@ -1,0 +1,59 @@
+.container-challenges {
+  -ms-overflow-style: none;
+  align-items: flex-start;
+  display: flex;
+  flex-direction: row;
+  height: 456px;
+  justify-content: flex-start;
+  overflow-x: scroll;
+  scrollbar-width: none;
+  width: 100%;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  @include breakpoint($large-screen-breakpoint) {
+    justify-content: center;
+  }
+
+  .rooms {
+    border-radius: 8px;
+    border: none;
+    box-shadow: -1px 2px 3px 0px $esc-gray;
+    margin: 1em;
+    width: 350px;
+
+    img.hacker {
+      border-radius: 8px 8px 0 0;
+      height: 100%;
+      width: 100%;
+    }
+
+    h3 {
+      font-size: 28px;
+      font-weight: 400;
+      margin: 0 0.5rem;
+    }
+    span {
+      margin: 0 0.5rem;
+    }
+
+    p {
+      font-size: 18px;
+      font-weight: 400;
+      margin-top: 0.1rem;
+      margin: 0 0.5rem;
+    }
+
+    small {
+      font-size: 14px;
+      font-weight: 400;
+      margin: 0 0.5rem;
+    }
+
+    button {
+      @include book-button;
+    }
+  }
+}

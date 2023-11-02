@@ -1,0 +1,25 @@
+nav {
+    display: none;
+
+@include breakpoint($medium-screen-breakpoint) {
+    background-color: $esc-dark;
+    color: #fff;
+    display: block;
+
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none;
+
+    li {
+    margin: 1rem;
+
+    &:hover {
+        color: $esc-light-blue;
+        cursor: pointer;
+    }
+    }
+}
+}
+}

@@ -1,0 +1,65 @@
+.container-information {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100vw;
+
+    @include breakpoint($medium-screen-breakpoint) {
+    grid-template-columns: 1fr 1fr;
+}
+
+img {
+    display: inline-block;
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle;
+
+    @include breakpoint($medium-screen-breakpoint) {
+    height: 100%;
+    max-width: 100%;
+    }
+}
+
+div.container-image-2 {
+    @include breakpoint($medium-screen-breakpoint) {
+    order: 4;
+    }
+}
+
+div.container-text {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px 20px;
+    width: 100%;
+    }
+
+h2 {
+    font-size: 32px;
+    font-weight: 700;
+    text-align: left;
+
+    @include breakpoint($large-screen-breakpoint) {
+    margin: 20px 80px 0 80px;
+    }
+}
+
+p {
+    margin: 30px 0;
+    text-align: left;
+    
+    @include breakpoint($large-screen-breakpoint) {
+    margin: 20px 80px 0 80px;
+    }
+}
+
+a {
+    margin: 30px 20px;
+
+    @include breakpoint($large-screen-breakpoint) {
+    margin-left: 80px;
+    }
+
+    @include red-button;
+    }
+}

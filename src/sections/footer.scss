@@ -1,0 +1,49 @@
+footer {
+    background-color: $esc-dark;
+    color: #fff;
+    gap: 1rem;
+    padding: 64px 20px;
+
+    @include breakpoint($medium-screen-breakpoint) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+@include breakpoint($large-screen-breakpoint) {
+    padding: 146px 200px 174px 108px;
+}
+
+h3 {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0.2rem 0;
+}
+
+p {
+    font-size: 18px;
+    font-weight: 400;
+
+    @include breakpoint($medium-screen-breakpoint) {
+    height: 119px;
+    width: 416px;
+    }
+}
+
+    div.footer-links-1, div.footer-links-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+
+    h3 {
+        padding-top: 1rem 0;
+    }
+
+    a {
+        color: #fff;
+        font-size: 18px;
+        font-weight: 400;
+        text-decoration: none;
+    }
+    }
+}
