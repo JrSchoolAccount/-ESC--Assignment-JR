@@ -11,6 +11,7 @@
   font-family: Roboto;
   font-size: 24px;
   margin: 0;
+  overflow-x: hidden;
 }
 
 .hero-banner {
@@ -68,13 +69,6 @@
     }
   }
 }
-}
-
-.heading {
-  font-size: 32px;
-  font-weight: 400;
-  padding: 2em 0 1rem 0;
-  text-align: center;
 }
 
   .white-space {

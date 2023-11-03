@@ -8,6 +8,7 @@
   font-family: Roboto;
   font-size: 24px;
   margin: 0;
+  overflow-x: hidden;
 }
 
 .hero-banner {
@@ -102,13 +103,6 @@
   }
 }
 
-.heading {
-  font-size: 32px;
-  font-weight: 400;
-  padding: 2em 0 1rem 0;
-  text-align: center;
-}
-
 .white-space {
   padding: 1em 0;
 }
@@ -198,6 +192,13 @@ nav {
   height: 72px;
   margin-right: 4px;
   width: auto;
+}
+
+.heading {
+  font-size: 32px;
+  font-weight: 400;
+  padding: 2em 0 1rem 0;
+  text-align: center;
 }
 
 .container-challenges {
@@ -370,12 +371,12 @@ footer {
   color: #fff;
   gap: 1rem;
   padding: 64px 20px;
+  margin: 0 auto;
 }
 @media screen and (min-width: 760px) {
   footer {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
   }
 }
 @media screen and (min-width: 1020px) {
@@ -388,20 +389,26 @@ footer h3 {
   font-weight: 700;
   margin: 0.2rem 0;
 }
-footer p {
+footer .footer-main p {
   font-size: 18px;
   font-weight: 400;
 }
 @media screen and (min-width: 760px) {
-  footer p {
+  footer .footer-main p {
     height: 119px;
     width: 416px;
+  }
+}
+@media screen and (min-width: 1150px) {
+  footer div.filler {
+    padding: 0 10%;
   }
 }
 footer div.footer-links-1, footer div.footer-links-2 {
   display: flex;
   flex-direction: column;
   gap: 0.2rem;
+  margin: 0 auto;
 }
 footer div.footer-links-1 h3, footer div.footer-links-2 h3 {
   padding-top: 1rem 0;
