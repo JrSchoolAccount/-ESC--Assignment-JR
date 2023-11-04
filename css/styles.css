@@ -8,6 +8,9 @@
   font-family: Roboto;
   font-size: 24px;
   margin: 0;
+}
+
+body {
   overflow-x: hidden;
 }
 
@@ -191,7 +194,7 @@ nav {
 .container-reviews .review img {
   height: 72px;
   margin-right: 4px;
-  width: auto;
+  width: 72px;
 }
 
 .heading {
@@ -208,7 +211,7 @@ nav {
   flex-direction: row;
   height: 456px;
   justify-content: flex-start;
-  overflow-x: scroll;
+  overflow-x: scroll !important;
   scrollbar-width: none;
   width: 100%;
 }
