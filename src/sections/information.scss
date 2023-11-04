@@ -63,3 +63,11 @@ a {
     @include red-button;
     }
 }
+
+.white-space {
+    padding: 1em 0;
+
+    @include breakpoint($medium-screen-breakpoint) {
+      padding: 3em 0;
+    }
+  }
