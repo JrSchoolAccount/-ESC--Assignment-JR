@@ -106,15 +106,6 @@ body {
   }
 }
 
-.white-space {
-  padding: 1em 0;
-}
-@media screen and (min-width: 760px) {
-  .white-space {
-    padding: 3em 0;
-  }
-}
-
 header {
   background-color: #011827;
   display: flex;
@@ -366,6 +357,15 @@ nav {
 @media screen and (min-width: 1020px) {
   .container-information a {
     margin-left: 80px;
+  }
+}
+
+.white-space {
+  padding: 1em 0;
+}
+@media screen and (min-width: 760px) {
+  .white-space {
+    padding: 3em 0;
   }
 }
 
