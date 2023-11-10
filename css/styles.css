@@ -172,9 +172,9 @@ nav {
 
 .-active {
   background-color: #fff;
-  opacity: 50%;
   bottom: 0;
   left: 0;
+  opacity: 50%;
   position: fixed;
   right: 0;
   top: 0;
@@ -196,30 +196,36 @@ div.container-menu {
 }
 div.container-menu.-open {
   display: flex;
+  animation: fade-in;
+  animation-timing-function: cubic-bezier(0.33, 1, 0.68, 1);
+  animation-duration: 0.5s;
 }
 div.container-menu div.container-close-button {
-  display: flex;
   align-self: stretch;
+  display: flex;
   justify-content: end;
+  animation: fade-in;
+  animation-timing-function: cubic-bezier(0.33, 1, 0.68, 1);
+  animation-duration: 1.5s;
 }
 div.container-menu div.container-close-button img.close-button {
   height: 40px;
-  width: 36px;
   margin: 25px 28px 0px 0px;
+  width: 36px;
 }
 div.container-menu ul {
-  display: flex;
   align-items: center;
-  justify-content: center;
+  display: flex;
   flex-direction: column;
   flex: 1;
-  padding: 0;
+  justify-content: center;
   margin: 0;
+  padding: 0;
 }
 div.container-menu ul li {
   font-size: 1.5rem;
-  list-style: none;
   font-weight: 700;
+  list-style: none;
   margin-bottom: 50px;
 }
 div.container-menu ul li a {
@@ -227,8 +233,14 @@ div.container-menu ul li a {
   text-decoration: none;
 }
 
-@keyframes fadeIn {}
-@keyframes fadeToWhite {}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .container-reviews {
   display: flex;
   flex-direction: row;
