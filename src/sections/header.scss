@@ -21,4 +21,20 @@ min-width: 30%;
     max-width: 100%;
 }
 }
+
+div.container-button {
+    display: flex;
+    flex: auto;
+    justify-content: end;
+
+    @include breakpoint($medium-screen-breakpoint) {
+    display: none;
+    }
+
+    img.menu-button {
+        height: 32px;
+        margin: 28px 20px 0px 0px;
+        width: 51px;
+    }
+}
 }
